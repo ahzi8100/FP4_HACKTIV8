@@ -10,35 +10,38 @@
     <script src="https://kit.fontawesome.com/59f485dc95.js" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row ">
+            <div class="header fw-bold mb-3">
+                <img src="assets/logo.png" alt="" width="70px" height="70px" class="me-3">Weather Check
+            </div>
             <div class="col-sm-7">
-                <div class="header fw-bold">
-                    <img src="assets/logo.png" alt="" width="70px" height="70px">Weather Check
-                </div>
-                
                 <div id="main">
-                    <div class="showTemp">
-                        <h1 class="display-3 temperature d-inline-block me-2" id="temp">-°C</h1>
-                        <div class="city d-inline-block">
-                            <h4 id="city">City, Region</h4>
-                            <p><span id="time"></span> - <span id="date"></span></p>
+                    <div class="detail-bg px-2 py-2">
+                        <div id="map"></div>
+                        <div class="showTemp pt-3 ps-2">
+                            <h1 class="display-3 temperature d-inline-block me-2" id="temp">-°C</h1>
+                            <div class="city d-inline-block">
+                                <h4 id="city">City, Region</h4>
+                                <p><span id="time"></span> - <span id="date"></span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5">
-                <div class="detail mt-5">
+            <div class="col-sm-5 mb-5">
+                <div class="detail-bg">
                     <form class="search" onsubmit="return false">
                         <input type="text" class="searchTerm" id="searchTerm" placeholder="Find Your City Here">
                         <button type="submit" class="searchButton" id="searchButton">
                             <i class="fa fa-search"></i>
                         </button>
                     </form>
-                        
+
                     <div class="rincian">
                         <h3>Weather Details</h3>
                         <div class="gambarcuaca d-flex justify-content-center align-content-center mb-3">
@@ -87,6 +90,7 @@
         crossorigin="anonymous"></script>
     <script src="sweetalert2.all.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 </body>
 
 </html>

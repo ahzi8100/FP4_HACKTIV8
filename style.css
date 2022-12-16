@@ -5,14 +5,13 @@ body {
     color: #fff;
 }
 
-.container .row .col-sm-7 .header {
-    font-size: 24px;
+.container .row .header {
+    font-size: 32px;
     font-family: monospace;
 }
-.showTemp {
-    padding-top: 75%;
+/* .showTemp {
     padding-left: 42px;
-}
+} */
 
 /* #main {
     height: 100%;
@@ -20,7 +19,7 @@ body {
 } */
 
 /* Detail */
-.detail {
+.detail-bg {
     backdrop-filter: blur(8px) saturate(166%);
     -webkit-backdrop-filter: blur(8px) saturate(166%);
     background-color: rgba(255, 255, 255, 0.15);
@@ -86,4 +85,14 @@ body {
 .subCuaca {
     font-size: 20px;
     margin-bottom: 12px;
+}
+
+/* Map  */
+#map {
+    height: 75vh;
+    border-radius: 12px;
+}
+
+.leaflet-popup-content-wrapper {
+    width: 100%;
 }
