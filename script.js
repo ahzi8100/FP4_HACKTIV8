@@ -1,3 +1,4 @@
+// Fetch API Weather
 let searchTerm = document.getElementById("searchTerm");
 let searchButton = document.getElementById("searchButton");
 let temp = document.getElementById("temp");
@@ -57,6 +58,7 @@ searchButton.addEventListener("click", function() {
       }))
 });
 
+// Time
 function showTime() {
     let a_p = "";
     let today = new Date();
@@ -86,6 +88,7 @@ function checkTime(i) {
 }
 setInterval(showTime, 500);
 
+// Date
 let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 			let myDays = ['Sunday', 'Monday', 'Tuessday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 			var date = new Date();
