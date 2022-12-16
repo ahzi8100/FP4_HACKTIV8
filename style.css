@@ -2,8 +2,13 @@ body {
     background-image: url("./assets/bg-main.jpg");
     object-fit: cover;
     background-repeat: no-repeat;
+    color: #fff;
 }
 
+.container .row .col-sm-7 .header {
+    font-size: 24px;
+    font-family: monospace;
+}
 .showTemp {
     padding-top: 75%;
     padding-left: 42px;
@@ -82,5 +87,3 @@ body {
     font-size: 20px;
     margin-bottom: 12px;
 }
-
-.tileCuaca {}
