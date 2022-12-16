@@ -2,6 +2,7 @@ body {
     background-image: url("./assets/bg-main.jpg");
     object-fit: cover;
     background-repeat: no-repeat;
+    
 }
 
 .showTemp {
